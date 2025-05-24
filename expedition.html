@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expédition DHL</title>
+</head>
+<body style="background-color:#ffcc00; font-family:sans-serif;">
+  <h1 style="color:#ba0c2f;">Formulaire d'expédition DHL</h1>
+  <form id="expedition-form">
+    <input name="code" placeholder="Code de suivi" required /><br/>
+    <input name="expediteur" placeholder="Nom de l’expéditeur" required /><br/>
+    <input name="destinataire" placeholder="Nom du destinataire" required /><br/>
+    <input name="adresse" placeholder="Adresse de livraison" required /><br/>
+    <input name="colis" placeholder="Nom du colis" required /><br/>
+    <input type="datetime-local" name="date_envoi" required /><br/>
+    <input type="datetime-local" name="date_arrivee" required /><br/>
+    <select name="trajet">
+      <option value="Pris en charge">Pris en charge</option>
+      <option value="Transit">Transit</option>
+      <option value="Arrivé à la poste">Arrivé à la poste</option>
+    </select><br/>
+    <input type="file" name="photos" multiple accept="image/*" /><br/>
+    <button style="background:red;color:white;">Enregistrer</button>
+  </form>
+</body>
+</html>
